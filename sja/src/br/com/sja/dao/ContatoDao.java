@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+
 import br.com.sja.connect.ConnectionFactory;
 import br.com.sja.model.Contato;
 
@@ -37,7 +38,7 @@ public class ContatoDao {
 				throw new RuntimeException(e);
 			}
 		}
-
+		
 		public List<Contato> getLista() {
 			try {
 				List<Contato> contatos = new ArrayList<Contato>();
